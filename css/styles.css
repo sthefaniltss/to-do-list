@@ -7,6 +7,19 @@ body{
     margin: 0;
     font-family: 'Bree Serif', serif;
 }
+header{
+    width: 100vw;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    background-color: lightsalmon;
+}
+header img{
+    width: 90px;
+    height: 90px;
+}
 #conteudo{
     margin: 0 auto;
     width: 90vw;
