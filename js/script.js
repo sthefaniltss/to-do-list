@@ -7,12 +7,12 @@ addTarefa.addEventListener('click',() =>{
     li.classList.add('item');
     let tarefa = document.querySelector("#tarefa").value
     li.innerHTML = tarefa;
-    listaDeItens.appendChild(li);
+    listaDeItens.insertBefore(li, listaDeItens.childNodes[0]);
 
     let span = document.createElement('span');
     span.innerHTML = "Concluir Tarefa";
     li.appendChild(span);
-
+   
 
 
 })

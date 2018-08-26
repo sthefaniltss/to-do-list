@@ -89,6 +89,7 @@ header img{
     justify-content: space-between;
     font-size: 2rem;
     padding-left: 30px;
+    width: 80%;
 }
 span{
    background-color: lightgreen;
