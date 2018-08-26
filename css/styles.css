@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    background-color: #ededed;
+}
+
+*{
+    margin: 0;
+    font-family: 'Bree Serif', serif;
+}
+#conteudo{
+    margin: 0 auto;
+    width: 90vw;
+    height: 100vw;
+    display: flex;
+}
+#caixaLista{
+    margin: auto 0;
+    width: 70%;
+    height: 90%;
+    background-color: white;
+}
+#caixaTarefas{
+    margin: 10% auto;
+    background-color: white;
+    width: 20%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+#caixaTarefas input{
+    margin: 40px 0 20px 0;
+    width: 200px;
+    height: 25px;
+    border-radius: 6px;
+    outline: none;
+    border: 1px solid black;
+}
+#caixaTarefas button{
+    height: 25px;
+    width: 120px;
+    font-size: 0.8rem;
+    border-radius: 8px;
+    outline: none;
+}
