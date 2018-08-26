@@ -6,6 +6,8 @@ body{
 *{
     margin: 0;
     font-family: 'Bree Serif', serif;
+    text-decoration: none;
+    list-style: none;
 }
 header{
     width: 100vw;
@@ -30,12 +32,15 @@ header img{
     margin: auto 0;
     width: 70%;
     height: 90%;
-    background-color: white;
-    font-size: 3rem;
+    background-color: white;  
     display: flex;
     flex-direction: column;
     align-items: center;
     box-shadow: 1px 0 8px 1px rgba(0, 0, 0, 0.1), 0 1px 40px 0 rgba(0, 0, 0, 0.1);
+}
+#caixaLista h2{
+    font-size: 4rem;
+    margin: 30px;
 }
 
 #caixaTarefas{
@@ -68,4 +73,26 @@ header img{
     background-color: lightsalmon;
     border: none;
     cursor: pointer;
+}
+
+.listaDeItens{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    padding: 0;
+}
+.item{
+    background-color: #ededed;
+    margin: 10px 0;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    padding-left: 30px;
+}
+span{
+   background-color: lightgreen;
+   text-align: center;
+   width: 100px;
+   font-size: 1rem;    
 }
