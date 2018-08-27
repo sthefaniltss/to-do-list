@@ -108,4 +108,11 @@ header img{
  }
  .botoesTarefa{
      display: flex;
+     color: black;
+     
+ }
+ .tarefaConcluida{
+     background-color: lightgrey;
+     color: white;
+     
  }
