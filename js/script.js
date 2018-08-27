@@ -1,6 +1,7 @@
 let addTarefa = document.querySelector(".addTarefa");
 let listaDeItens = document.querySelector(".listaDeItens");
 
+
 addTarefa.addEventListener('click',() =>{
     let li = document.createElement('li');
     li.setAttribute('class', 'item');
@@ -9,10 +10,28 @@ addTarefa.addEventListener('click',() =>{
     li.innerHTML = tarefa;
     listaDeItens.insertBefore(li, listaDeItens.childNodes[0]);
 
-    let span = document.createElement('span');
-    span.innerHTML = "Concluir Tarefa";
-    li.appendChild(span);
-   
+    let botoes = document.createElement('div');
+    botoes.setAttribute('class', 'botoesTarefa');
+    botoes.classList.add('botoesTarefa');
 
-
+    let concluirTarefa = document.createElement('span');
+    concluirTarefa.setAttribute('class', 'concluirTarefa');
+    concluirTarefa.classList.add('concluirTarefa');
+    concluirTarefa.innerHTML = "Concluir Tarefa";
+    
+    
+    let removerTarefa = document.createElement('span');
+    removerTarefa.setAttribute('class', 'removerTarefa');
+    removerTarefa.classList.add('removerTarefa');
+    removerTarefa.innerHTML = "Remover Tarefa";
+    li.appendChild(botoes);
+    botoes.appendChild(concluirTarefa);
+    botoes.appendChild(removerTarefa);
+    
+    
+    removerTarefa.addEventListener('click', () =>{
+        li.parentNode.removeChild(li);
+    })
+    
 })
+

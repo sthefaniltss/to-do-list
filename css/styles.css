@@ -89,11 +89,23 @@ header img{
     justify-content: space-between;
     font-size: 2rem;
     padding-left: 30px;
-    width: 80%;
+    width: 96%;
 }
-span{
+.concluirTarefa{
    background-color: lightgreen;
    text-align: center;
    width: 100px;
-   font-size: 1rem;    
+   font-size: 1rem;  
+   cursor: pointer;  
+   
 }
+.removerTarefa{
+    background-color: lightcoral;
+    text-align: center;
+    width: 100px;
+    font-size: 1rem;  
+    cursor: pointer;  
+ }
+ .botoesTarefa{
+     display: flex;
+ }
