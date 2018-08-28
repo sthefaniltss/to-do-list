@@ -6,9 +6,11 @@ addTarefa.addEventListener('click', () => {
     let li = document.createElement('li');
     li.setAttribute('class', 'item');
     li.classList.add('item');
-    let tarefa = document.querySelector("#tarefa").value
+    let inputDaTarefa = document.querySelector("#tarefa");
+    let tarefa = inputDaTarefa.value;
     li.innerHTML = tarefa;
     listaDeItens.insertBefore(li, listaDeItens.childNodes[0]);
+    inputDaTarefa.value = "";
 
     let botoes = document.createElement('div');
     botoes.setAttribute('class', 'botoesTarefa');
@@ -27,6 +29,7 @@ addTarefa.addEventListener('click', () => {
     li.appendChild(botoes);
     botoes.appendChild(concluirTarefa);
     botoes.appendChild(removerTarefa);
+    
 
 
     removerTarefa.addEventListener('click', () => {
