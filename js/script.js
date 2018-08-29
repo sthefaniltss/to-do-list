@@ -8,30 +8,37 @@ addTarefa.addEventListener('click', () => {
     li.classList.add('item');
     let inputDaTarefa = document.querySelector("#tarefa");
     let tarefa = inputDaTarefa.value;
-    li.innerHTML = tarefa;
-    listaDeItens.insertBefore(li, listaDeItens.childNodes[0]);
-    inputDaTarefa.value = "";
-
-    let botoes = document.createElement('div');
-    botoes.setAttribute('class', 'botoesTarefa');
-    botoes.classList.add('botoesTarefa');
-
-    let concluirTarefa = document.createElement('span');
-    concluirTarefa.setAttribute('class', 'concluirTarefa');
-    concluirTarefa.classList.add('concluirTarefa');
-    concluirTarefa.innerHTML = "Concluir Tarefa";
-
-
-    let removerTarefa = document.createElement('span');
-    removerTarefa.setAttribute('class', 'removerTarefa');
-    removerTarefa.classList.add('removerTarefa');
-    removerTarefa.innerHTML = "Remover Tarefa";
-    li.appendChild(botoes);
-    botoes.appendChild(concluirTarefa);
-    botoes.appendChild(removerTarefa);
+    if(tarefa === ""){
+        alert("Por favor escreva sua tarefa!")
+    }
+    else{
+        li.innerHTML = tarefa;
+        listaDeItens.insertBefore(li, listaDeItens.childNodes[0]);
+        inputDaTarefa.value = "";
+        
+        let botoes = document.createElement('div');
+        botoes.setAttribute('class', 'botoesTarefa');
+        botoes.classList.add('botoesTarefa');
+        
+        let concluirTarefa = document.createElement('span');
+        concluirTarefa.setAttribute('class', 'concluirTarefa');
+        concluirTarefa.classList.add('concluirTarefa');
+        concluirTarefa.innerHTML = "Concluir Tarefa";
+        
+        
+        let removerTarefa = document.createElement('span');
+        removerTarefa.setAttribute('class', 'removerTarefa');
+        removerTarefa.classList.add('removerTarefa');
+        removerTarefa.innerHTML = "Remover Tarefa";
+        li.appendChild(botoes);
+        botoes.appendChild(concluirTarefa);
+        botoes.appendChild(removerTarefa);
+        
+        
+        
+    }
     
-
-
+    
     removerTarefa.addEventListener('click', () => {
         li.parentNode.removeChild(li);
     })
@@ -42,12 +49,12 @@ addTarefa.addEventListener('click', () => {
             concluirTarefa.style.backgroundColor = "mediumseagreen"
         }
         else{
-        li.classList.remove('tarefaConcluida');
-        concluirTarefa.innerHTML = "Concluir Tarefa"
-        concluirTarefa.style.backgroundColor = "lightgreen"
+            li.classList.remove('tarefaConcluida');
+            concluirTarefa.innerHTML = "Concluir Tarefa"
+            concluirTarefa.style.backgroundColor = "lightgreen"
         }
-
+        
     })
-
+    
 })
 
