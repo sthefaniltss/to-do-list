@@ -16,28 +16,28 @@ addTarefa.addEventListener('click', () => {
         listaDeItens.insertBefore(li, listaDeItens.childNodes[0]);
         inputDaTarefa.value = "";
         
-        let botoes = document.createElement('div');
-        botoes.setAttribute('class', 'botoesTarefa');
-        botoes.classList.add('botoesTarefa');
-        
-        let concluirTarefa = document.createElement('span');
-        concluirTarefa.setAttribute('class', 'concluirTarefa');
-        concluirTarefa.classList.add('concluirTarefa');
-        concluirTarefa.innerHTML = "Concluir Tarefa";
-        
-        
-        let removerTarefa = document.createElement('span');
-        removerTarefa.setAttribute('class', 'removerTarefa');
-        removerTarefa.classList.add('removerTarefa');
-        removerTarefa.innerHTML = "Remover Tarefa";
-        li.appendChild(botoes);
-        botoes.appendChild(concluirTarefa);
-        botoes.appendChild(removerTarefa);
+       
         
         
         
     }
+    let botoes = document.createElement('div');
+    botoes.setAttribute('class', 'botoesTarefa');
+    botoes.classList.add('botoesTarefa');
     
+    let concluirTarefa = document.createElement('span');
+    concluirTarefa.setAttribute('class', 'concluirTarefa');
+    concluirTarefa.classList.add('concluirTarefa');
+    concluirTarefa.innerHTML = "Concluir Tarefa";
+    
+    
+    let removerTarefa = document.createElement('span');
+    removerTarefa.setAttribute('class', 'removerTarefa');
+    removerTarefa.classList.add('removerTarefa');
+    removerTarefa.innerHTML = "Remover Tarefa";
+    li.appendChild(botoes);
+    botoes.appendChild(concluirTarefa);
+    botoes.appendChild(removerTarefa);
     
     removerTarefa.addEventListener('click', () => {
         li.parentNode.removeChild(li);
