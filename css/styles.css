@@ -1,6 +1,7 @@
 body{
     margin: 0;
     background-color: #ededed;
+    overflow-x: hidden;
 }
 
 *{
@@ -61,7 +62,7 @@ header img{
     width: 80%;
     text-align: center;
     color: #320042;
-
+    
 }
 #caixaTarefas input{
     margin: 40px 0 20px 0;
@@ -102,12 +103,12 @@ header img{
     width: 96%;
 }
 .concluirTarefa{
-   background-color: lightgreen;
-   text-align: center;
-   width: 100px;
-   font-size: 1rem;  
-   cursor: pointer;  
-   
+    background-color: lightgreen;
+    text-align: center;
+    width: 100px;
+    font-size: 1rem;  
+    cursor: pointer;  
+    
 }
 .removerTarefa{
     background-color: lightcoral;
@@ -115,14 +116,24 @@ header img{
     width: 100px;
     font-size: 1rem;  
     cursor: pointer;  
- }
- .botoesTarefa{
-     display: flex;
-     color: black;
-     
- }
- .tarefaConcluida{
-     background-color: #FFE100;
-     color: white;
-     
- }
+}
+.botoesTarefa{
+    display: flex;
+    color: black;
+    
+}
+.tarefaConcluida{
+    background-color: #FFE100;
+    color: white;
+    
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    height: 40px;
+    background-color: #FFE100;
+    color: #320042;
+    
+}

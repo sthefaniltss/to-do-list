@@ -14,12 +14,7 @@ addTarefa.addEventListener('click', () => {
     else{
         li.innerHTML = tarefa;
         listaDeItens.insertBefore(li, listaDeItens.childNodes[0]);
-        inputDaTarefa.value = "";
-        
-       
-        
-        
-        
+        inputDaTarefa.value = "";    
     }
     let botoes = document.createElement('div');
     botoes.setAttribute('class', 'botoesTarefa');
