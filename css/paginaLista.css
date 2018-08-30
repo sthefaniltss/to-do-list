@@ -20,6 +20,9 @@ header{
     background-color: #FFE100;
     color: #320042;
 }
+header a h1{
+    color: #320042;
+}
 header img{
     width: 90px;
     height: 90px;

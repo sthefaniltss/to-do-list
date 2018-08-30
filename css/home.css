@@ -26,7 +26,38 @@ header img{
     width: 180px;
     height: 180px;
 }
+section{
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 65vh;
+    font-size: 1.2rem;
+}
+.listaNoPc{
+    width: 300px;
+    height: 300px;
+    padding: 7px;
+    background-color: #320042;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+}
+.descricaoDoSite{
+    width: 30%;
+}
+.descricaoDoSite p{
+    width: 100%;
+    margin-bottom: 20px;
+    text-align: justify;
+    
+}
+section div img{
+    width: 200px;
+    
+}
 
 footer{
     display: flex;
