@@ -36,16 +36,16 @@ section{
     height: 100%;
     font-size: 1.2rem;
 }
-.listaNoPc{
+
+figure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 150px;
     height: 150px;
     padding: 7px;
     background-color: #320042;
     border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
 }
 .listaNoPc img{
     width: 90px;
@@ -54,6 +54,7 @@ section{
 .descricaoDoSite{
     width: 80%;
     margin: 30px auto;
+    height: 50%;
 }
 .descricaoDoSite p{
     width: 100%;
@@ -69,8 +70,97 @@ footer{
     align-items: center;
     justify-content:center;
     height: 40px;
+    font-size: 1.3rem;
     background-color: #FFE100;
     color: #320042;
     
 }
 
+
+@media only screen and (min-width: 600px) {
+    .descricaoDoSite p {
+        font-size: 1.3rem;
+    }
+    header{ 
+        font-size: 3rem;
+        color: #320042;
+    }
+    header img{
+        width: 100px;
+        height: 100px;
+    }
+    figure{
+        width: 200px;
+        height: 200px;
+       
+    }
+    .listaNoPc img{
+        width: 100px;
+    
+    }
+} 
+
+@media only screen and (min-width: 992px) {
+    section{
+        flex-direction: row;
+        font-size: 2rem;
+    }
+    .listaNoPc{
+        height: 50%;
+        width: 20%;
+        margin-left:20px; 
+    }
+    .listaNoPc img{
+        width: 150px;
+    
+    }
+    figure{
+        width: 250px;
+        height: 250px;
+
+    }
+    .descricaoDoSite{
+        width: 50%;
+        height: 50%;
+    }
+    .descricaoDoSite p{
+        font-size: 1.7rem;
+       
+    }
+} 
+
+
+@media only screen and (min-width: 1200px) {
+    header{ 
+        height: 400px;
+        font-size: 5rem;
+    }
+    header img{
+        width: 200px;
+        height: 200px;
+    }
+    .listaNoPc{
+        display: flex;
+        justify-content: center;
+        height: 55%;
+        width: 40%;
+    }
+    .listaNoPc img{
+        width: 200px;
+    
+    }
+    figure{
+        width: 300px;
+        height: 300px;
+        margin-left: 80px;
+
+    }
+    .descricaoDoSite{
+        width: 50%;
+       
+    }
+    .descricaoDoSite p{
+        width: 80%;
+    }
+    
+}
