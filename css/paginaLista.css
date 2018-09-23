@@ -144,3 +144,63 @@ footer{
     
 }
 
+
+
+@media only screen and (min-width: 768px){
+    #conteudo{
+        height: 100vh;
+        flex-direction: row;
+        margin: 0;
+    }
+    #caixaLista{
+        margin: 7%;
+        height: 80%;
+    }
+    .item{
+        flex-direction: row;
+        margin: 10px 0;
+        height: 55px;
+        justify-content: space-between;
+        font-size: 1.25rem;
+        padding-left: 30px;
+        width: 96%;
+    }
+    .concluirTarefa, .removerTarefa{
+        width: 80px;
+        height: 55px;;
+        
+    }
+    #caixaTarefas{
+        margin: 10% 2% 0 0;
+        width: 400px;
+        height: 300px;
+    }
+
+}
+
+@media only screen and (min-width: 992px){
+    #caixaTarefas{
+        margin: 10% 5% 0 0;
+    }
+
+}
+@media only screen and (min-width: 1200px){
+    header{
+        font-size: 3rem;
+        height: 250px;
+    }
+    header img{
+        width: 90px;
+        height: 90px;
+    }
+    .item{
+        font-size: 2rem;
+    }
+    #caixaLista h2{
+        font-size: 3rem;
+    }
+    #caixaTarefas h1{
+        font-size: 2.5rem;
+    }
+    
+}
